@@ -19,7 +19,7 @@ function Rules() {
 
     return (
         <>
-        <div className="row align-right">
+        <div className="row rules">
             <button className="btn-rules" onClick={toggleModal}>Rules</button>
         </div>
         {isModalOpen && 

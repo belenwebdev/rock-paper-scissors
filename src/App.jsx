@@ -20,13 +20,15 @@ function App() {
   return (
     <div className="App">
       <Score score={score}></Score>
-      <div className="main">
+      <main>
         {chosenOption ? 
           <Result chosenOption={chosenOption} resetGame={resetGame} updateScore={updateScore}></Result> :
           <Game handleClick={setChosenOption}></Game>}
-      </div>
+      </main>
       <Rules></Rules>
-      <p>Challenge by <a href="https://www.frontendmentor.io" target="_blank">Front End Mentor</a> · Code by <a href="http://belencarrion.dev" target="_blank">Belen Carrion</a></p>
+      <footer>
+        <span>Challenge by <a href="https://www.frontendmentor.io" target="_blank">Front End Mentor</a></span> <span className="bullet">·</span> <span>Code by <a href="http://belencarrion.dev" target="_blank">Belen Carrion</a></span>
+      </footer>
     </div>
   )
 }
